@@ -142,6 +142,7 @@
     <ClInclude Include="fifo.h" />
     <ClInclude Include="interface.h" />
     <ClInclude Include="clock.h" />
+    <ClInclude Include="sim.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="clock.cpp" />

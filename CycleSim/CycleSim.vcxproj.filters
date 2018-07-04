@@ -24,6 +24,9 @@
     <ClInclude Include="clock.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="sim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
