@@ -139,6 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="fifo.h" />
+    <ClInclude Include="interface.h" />
+    <ClInclude Include="clock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clock.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
