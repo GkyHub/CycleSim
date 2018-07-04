@@ -31,20 +31,20 @@ namespace hdl
 	private:
 		void _onClkEdge() {
 			// write logic
-			if (!*full && *wr_en) {
+			if (!full && *wr_en) {
 				_mem[_wrAddr] = *wr_data;
 				_wrAddr = (_wrAddr + 1) % L;
 			}
 			// read logic
-			if (!*empty && *rd_en) {
+			if (!empty && *rd_en) {
 				_rdAddr = (_rdAddr + 1) % L;
 			}
 		};
 
 		void _postClkEdge() {
-			*full = ((_wrAddr + 1) % L) == _rdAddr;
-			*empty = _wrAddr == _rdAddr;
-			*rd_data = _mem[_rdAddr];
+			full = ((_wrAddr + 1) % L) == _rdAddr;
+			empty = _wrAddr == _rdAddr;
+			rd_data = _mem[_rdAddr];
 		}
 
 	public:

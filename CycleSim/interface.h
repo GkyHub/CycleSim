@@ -1,4 +1,4 @@
 #pragma once
 
 #define IN(TYPE) const TYPE*
-#define OUT(TYPE) TYPE*
+#define OUT(TYPE) TYPE
